@@ -18,7 +18,7 @@ This is a FAQ accordion card created with html, css and javascript. With no fram
 ### Links
 
 - Solution URL: [Repository](https://github.com/KevL97t/faq-accordion-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://kevl97t.github.io/faq-accordion-card/)
 
 ## My process
 

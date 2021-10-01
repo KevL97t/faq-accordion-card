@@ -97,3 +97,19 @@ body{
 .btn-item.active::after{
     content: '\02212';
 }
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.attribution{
+    text-align: center;
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: rgb(64, 228, 160);
+}
