@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+}
+.main-container{
+    width: 90%;
+    height: 520px;
+    background-color: white;
+    margin: 140px auto 0 auto;
+    border-radius: 20px;
+}
+
+.main-images-container .woman-image{
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    background-image: url("../images/illustration-woman-online-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -112px 0 0 13px;
+}
+
+.main-images-container .shadow-image{
+    position: absolute;
+    width: 255px;
+    height: 110px;
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -3px 0 0 45px;
+}
+
+.main-container .title-container{
+    position: absolute;
+    width: 90%;
+    font-size: 2rem;
+    color: hsl(238, 29%, 16%);
+    margin-top: 135px;
+    text-align: center;
+}
+
+.faq-main-container{  
+    position: absolute; 
+    width: 90%;
+    margin: 170px auto;
+    padding: 20px;
+}
+
+.btn-item{
+    display: block;
+    color: hsl(240, 6%, 50%);
+    padding: 8px;
+    border-bottom: 3px solid hsl(240, 5%, 91%);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.item-content{
+    /* background-color: red; */
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    font-size: 1.2rem;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+}
+
+.active + .item-content{
+    max-height: 100vh;
+    padding: 10px;
+    opacity: 1;
+}
+
+.btn-item.active{
+    /* background-color: orange; */
+    color: hsl(238, 29%, 16%);
+}
+
+.btn-item::after{
+    content: '\002b';
+    float: right;
+}
+
+.btn-item.active::after{
+    content: '\02212';
+}
